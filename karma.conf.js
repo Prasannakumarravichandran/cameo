@@ -11,7 +11,11 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('karma-sonarqube-reporter'),
-      require('@angular-devkit/build-angular/plugins/karma')
+      require('@angular-devkit/build-angular/plugins/karma'),
+      require('karma-coverage-istanbul-reporter'),
+      require('@angular/cli/plugins/karma'),
+      require('karma-jasmine-diff-reporter'),
+      require('karma-structured-json-reporter')
     ],
     client: {
       jasmine: {
